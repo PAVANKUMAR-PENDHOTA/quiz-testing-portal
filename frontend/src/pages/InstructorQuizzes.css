@@ -1,0 +1,150 @@
+.instructor-quizzes-page {
+  min-height: calc(100vh - 68px);
+  background: #f5f7fb;
+  padding: 35px 20px;
+}
+
+.instructor-quizzes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.instructor-quizzes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.instructor-quizzes-header h1 {
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.instructor-quizzes-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.create-new-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-new-btn:hover {
+  background: #1d4ed8;
+}
+
+.instructor-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.instructor-quiz-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.instructor-quiz-card h2 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: 19px;
+}
+
+.instructor-quiz-card p {
+  color: #6b7280;
+  line-height: 1.5;
+  min-height: 45px;
+}
+
+.instructor-quiz-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 18px 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.analytics-btn {
+  width: 100%;
+  border: none;
+  background: #111827;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.analytics-btn:hover {
+  background: #1f2937;
+}
+
+.empty-instructor-quizzes {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.empty-instructor-quizzes h2 {
+  margin-bottom: 8px;
+}
+
+.empty-instructor-quizzes p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.empty-instructor-quizzes button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.instructor-quizzes-status {
+  min-height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructor-quizzes-status.error {
+  color: #dc2626;
+}
+
+@media (max-width: 850px) {
+  .instructor-quiz-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .instructor-quizzes-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .create-new-btn {
+    width: 100%;
+  }
+
+  .instructor-quiz-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,88 @@
+.leaderboard-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.leaderboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.leaderboard-header h1 {
+  margin-bottom: 8px;
+}
+
+.leaderboard-header p {
+  color: #6b7280;
+}
+
+.leaderboard-table-wrapper {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.leaderboard-table th {
+  background: #f9fafb;
+  color: #374151;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.rank {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.leaderboard-status {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaderboard-status.error {
+  color: #dc2626;
+}
+
+.empty-leaderboard {
+  background: white;
+  padding: 50px;
+  border-radius: 14px;
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .leaderboard-page {
+    padding: 20px 10px;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,61 @@
+
+.history-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.history-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.history-container h1 {
+  margin-bottom: 25px;
+}
+
+.history-table-wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-table th {
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+.correct-text {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.wrong-text {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.empty-history,
+.history-status {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.history-status.error {
+  color: #dc2626;
+}
